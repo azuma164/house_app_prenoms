@@ -23,7 +23,7 @@ export default new Router({
       component: Bubble
     },
     {
-      path: '/time',
+      path: '/',
       name: 'time',
       component: Time
     }

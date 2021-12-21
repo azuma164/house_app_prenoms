@@ -159,7 +159,7 @@ ul.forenames-list
             //- <li><router-link to="/lang">言語</router-link></li>
             <li><a href='http://localhost:8887/language.html'>言語</a></li>
             //- <li><router-link to="/bubble">意味</router-link></li>
-            <li><a href='http://localhost:8887/'>意味</a></li>
+            <li><a href='http://localhost:8887/meaning.html'>意味</a></li>
             <li><router-link to="/time">時代</router-link></li>
         </ul>
     </nav>
