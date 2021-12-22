@@ -1,5 +1,5 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production'
-      ? '/prenoms-app/'   //任意
-      : '/'
+    // publicPath: process.env.NODE_ENV === 'production'
+    publicPath: "/",
+    outputDir: "docs"
   }
