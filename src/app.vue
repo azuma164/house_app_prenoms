@@ -166,32 +166,32 @@ ul.forenames-list
   </header>
   <router-view/>
 </div>
-#app
-  content
-    .left-side
-      .title
-        h2 De 1945 à 2015 :
-        h1 70 ans de prénoms en France
-      form.search
-        input(type="text" autocomplete="off" placeholder="Recherche..." v-model="searchQuery")
-        img.search-image(src="./images/search.png")
-        a.clear(href="#" v-show="searchQuery.length" @click="searchQuery = ''")
-          img(src="./images/clear.png")/
-      .forenames-list-container
-        ul.forenames-list(ref="forenamesList")
-          li(v-for="forenameData in displayedForenames",
-            :class="[forenameData.sex, forenameData.selected ? 'selected' : '']",
-            :style="forenameStyle(forenameData)",
-            :title="forenameData.alternatives ? 'autres orthographes: ' + forenameData.alternatives.join(', ') : null",
-            v-text="forenameData.forename"
-            @click.prevent="toggleForename(forenameData)"
-          )
-    .right-side
-      graph(
-        :forenames="selectedForenames",
-        @forename:remove="toggleForename",
-        @year-range="setYearRange"
-      )
+//- #app
+//-   content
+//-     .left-side
+//-       .title
+//-         h2 De 1945 à 2015 :
+//-         h1 70 ans de prénoms en France
+//-       form.search
+//-         input(type="text" autocomplete="off" placeholder="Recherche..." v-model="searchQuery")
+//-         img.search-image(src="./images/search.png")
+//-         a.clear(href="#" v-show="searchQuery.length" @click="searchQuery = ''")
+//-           img(src="./images/clear.png")/
+//-       .forenames-list-container
+//-         ul.forenames-list(ref="forenamesList")
+//-           li(v-for="forenameData in displayedForenames",
+//-             :class="[forenameData.sex, forenameData.selected ? 'selected' : '']",
+//-             :style="forenameStyle(forenameData)",
+//-             :title="forenameData.alternatives ? 'autres orthographes: ' + forenameData.alternatives.join(', ') : null",
+//-             v-text="forenameData.forename"
+//-             @click.prevent="toggleForename(forenameData)"
+//-           )
+//-     .right-side
+//-       graph(
+//-         :forenames="selectedForenames",
+//-         @forename:remove="toggleForename",
+//-         @year-range="setYearRange"
+//-       )
 </template>
 
 <script>
